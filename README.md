@@ -33,10 +33,12 @@ A few of these benefits:
 1. Install [Vagrant](https://www.vagrantup.com/)
 2. Install [Virtualbox](https://www.virtualbox.org/) (If you're on Mojave, you may need to install [VirtualBox 5.2](https://www.virtualbox.org/wiki/Download_Old_Builds_5_2))
 3. clone down this repo `git clone https://github.com/tttaaannnggg/webvm.git`
+4. `cd` into the cloned folder (named `webvm`)
+5. run `vagrant up` and wait for everything to install
 
 # Usage
 1. enter the `webvm` folder that you cloned down from this repo
-2. if you're in the folder with the `Vagrantfile`, `vagrant up` will initialize your VM, which will take a while the first time you run it. You'll see a bunch of stuff printed to the conosle.
+2. if you're in the folder with the `Vagrantfile`, `vagrant up` will initialize your VM, enabling you to connect to it. This may take a minute.
 3. once the previous operation is done, run `vagrant ssh`, and you'll be presented with a terminal. it should print something like `Wecome to Ubuntu 18.04`, and change your prompt to `vagrant@ubuntu-bionic`
 
 ### Accessing your files
