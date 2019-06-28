@@ -7,6 +7,7 @@ This installation includes the following:
 * NVM
 * PostgreSQL
 * MongoDB
+
 (note: this is done with minimal configuration, so you may need to do more work to get it going for your particular use case. The installations are valid, though.)
 
 I'm planning to add the following as I continue to build up the box, but haven't installed them yet:
