@@ -1,0 +1,13 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "ttaanngg/webdev"
+  config.vm.box_version = "0.1"
+
+  # we're opening 3000, 8000, and 8080 because they're the most
+  # likely to be used during your webdev process.
+  #
+  # if you need more ports, copy paste the examples and change the numbers
+  config.vm.network "forwarded_port", guest:3000, host:3000
+  config.vm.network "forwarded_port", guest:8000, host:8000
+  config.vm.network "forwarded_port", guest:8080, host:8080
+end
+
