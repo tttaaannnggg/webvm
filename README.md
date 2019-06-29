@@ -31,7 +31,7 @@ A few of these benefits:
 # Installation
 
 1. Install [Vagrant](https://www.vagrantup.com/)
-2. Install [Virtualbox](https://www.virtualbox.org/) (If you're on Mojave, you may need to install [VirtualBox 5.2](https://www.virtualbox.org/wiki/Download_Old_Builds_5_2))
+2. Install [Virtualbox](https://www.virtualbox.org/)
 3. clone down this repo `git clone https://github.com/tttaaannnggg/webvm.git`
 4. `cd` into the cloned folder (named `webvm`)
 5. run `vagrant up` and wait for everything to install
