@@ -44,7 +44,7 @@ A few of these benefits:
 ### Using MongoDB
 At the moment, there are two ways to make MongoDB accessible to the host OS. I'll figure out how to automate it later.
 * You can run `mongod` with `--bind_ip 0.0.0.0`, as `sudo mongod --bind_ip 0.0.0.0`
-* You can edit the configuration file stored at `/etc/mongod.conf`. Look for the `bindIp` option and replace the `127.0.0.1` with `0.0.0.0`
+* You can edit the configuration file stored at `/etc/mongodb.conf`. Look for the `bindIp` option and replace the `127.0.0.1` with `0.0.0.0`
 
 ### Accessing your files
 There is a specific folder that is shared between the guest (virtual) OS, and the host (main) OS. On the host OS, you simply need to go to the `webvm` folder, and you'll see the shared stuff. On the VM, you'll be able to access the same folder at `/vagrant/` (i.e. `cd /vagrant/`)
