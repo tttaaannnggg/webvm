@@ -42,7 +42,7 @@ A few of these benefits:
 3. once the previous operation is done, run `vagrant ssh`, and you'll be presented with a terminal. it should print something like `Wecome to Ubuntu 18.04`, and change your prompt to `vagrant@ubuntu-bionic`
 
 ### Using MongoDB
-At the moment, there are two ways to make MongoDB accessible to the host OS.
+At the moment, there are two ways to make MongoDB accessible to the host OS. I'll figure out how to automate it later.
 * You can run `mongod` with `--bind_ip 0.0.0.0`, as `sudo mongod --bind_ip 0.0.0.0`
 * You can edit the configuration file stored at `/etc/mongod.conf`. Look for the `bindIp` option and replace the `127.0.0.1` with `0.0.0.0`
 
