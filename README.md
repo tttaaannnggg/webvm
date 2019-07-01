@@ -41,6 +41,11 @@ A few of these benefits:
 2. if you're in the folder with the `Vagrantfile`, `vagrant up` will initialize your VM, enabling you to connect to it. This may take a minute.
 3. once the previous operation is done, run `vagrant ssh`, and you'll be presented with a terminal. it should print something like `Wecome to Ubuntu 18.04`, and change your prompt to `vagrant@ubuntu-bionic`
 
+### Using MongoDB
+At the moment, there are two ways to make MongoDB accessible to the host OS.
+* You can run `mongod` with `--bind_ip 0.0.0.0`, as `sudo mongod --bind_ip 0.0.0.0`
+* You can edit the configuration file stored at `/etc/mongod.conf`. Look for the `bindIp` option and replace the `127.0.0.1` with `0.0.0.0`
+
 ### Accessing your files
 There is a specific folder that is shared between the guest (virtual) OS, and the host (main) OS. On the host OS, you simply need to go to the `webvm` folder, and you'll see the shared stuff. On the VM, you'll be able to access the same folder at `/vagrant/` (i.e. `cd /vagrant/`)
 
