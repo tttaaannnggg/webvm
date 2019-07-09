@@ -7,11 +7,11 @@ This installation includes the following:
 * NVM
 * PostgreSQL
 * MongoDB
+* Docker
 
 It lets your host OS access ports `3000`, `5432`, `8000`, `8080`, and `27017`, which should cover most of your cases, but you may need to manually edit the `Vagrantfile` if you need more ports available.
 
 I'm planning to add the following as I continue to build up the box, but haven't installed them yet:
-* Docker
 * Kubernetes
 * (some CLI utils?)
 * (my own .vimrc?)
