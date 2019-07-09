@@ -14,3 +14,6 @@ sudo apt-get install -y postgresql postgresql-contrib
 sudo su - postgres -c "createuser vagrant"
 sudo mkdir /data
 sudo mkdir /data/db
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker vagrant
